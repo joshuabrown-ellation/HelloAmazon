@@ -1,0 +1,48 @@
+<VAST version='2.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='vast.xsd'>
+    <Ad id='21820658.139931269425152'>
+        <Wrapper>
+            <AdSystem>FreeWheel</AdSystem>
+            <VASTAdTagURI><![CDATA[https://aax.amazon-adsystem.com/e/dtb/vast?b=&rnd=391914291&pp=]]></VASTAdTagURI>
+            <Impression>
+                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=defaultImpression&et=i&_cc=21820658,8378724,33081.,25467.33081.,1510618248,1&tpos=1&iw=&uxnw=&uxss=&uxct=&metr=121&init=1&cr=]]></Impression>
+            <Creatives>
+                <Creative AdID='21820658' id='3074058'>
+                    <Linear>
+                        <TrackingEvents>
+                            <Tracking event='complete'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=complete&et=i&_cc=&tpos=1&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                            <Tracking event='firstQuartile'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=firstQuartile&et=i&_cc=&tpos=1&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                            <Tracking event='midpoint'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=1&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                            <Tracking event='thirdQuartile'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=thirdQuartile&et=i&_cc=&tpos=1&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                            <Tracking event='mute'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_mute&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='unmute'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_un-mute&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='collapse'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_collapse&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='expand'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_expand&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='pause'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_pause&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='resume'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_resume&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='rewind'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_rewind&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='acceptInvitation'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_accept-invitation&et=s&_cc=&tpos=1]]></Tracking>
+                            <Tracking event='close'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=_close&et=s&_cc=&tpos=1]]></Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickTracking id='FWc_21820658.0'>
+                                <![CDATA[http://5fd74.v.fwmrm.net/ad/l/1?s=d016&n=392565%3B392565&t=1510618248871007011&f=&r=392565&adid=21820658&reid=8378724&arid=0&auid=&cn=defaultClick&et=c&_cc=&tpos=1&cr=]]></ClickTracking>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </Wrapper>
+    </Ad>
+</VAST>

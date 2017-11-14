@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon aps tag</title>
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #444444;
+            margin: 0;
+        }
+        #VRV_Preroll_1 {
+            width: 100%;
+            height: 500px;
+            background-color: black;
+        }
+        nav {
+            width: 100%;
+            background-color: lightgreen;
+        }
+    </style>
+
+    <script>
+      //Load the Amazon Publisher Services JavaScript Library
+      !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+      /**
+       *
+       * Some mock stuff for test
+       */
+      window.EVS = {
+        adService: {
+          currentBreakType: 'midroll',
+        },
+        player: {
+          volume: 0.8,
+        }
+      };
+    </script>
+    <script src="//10.30.65.232:5000/core_dev.js?PID=121"></script>
+</head>
+<body>
+<div id="VRV_Preroll_1"></div>
+<nav>
+    <button id="play_ad" onclick="triggerAd()">Play Ad</button>
+</nav>
+
+<script>
+  var AMSdebug = true; // a debug flag
+
+  function triggerAd() {
+    window.dispatchEvent(new CustomEvent('play_ams_ad'));
+  }
+
+  //Initialize the Library
+  apstag.init({
+    pubID: '3603',
+    videoAdServer: 'freewheel',
+  }, function tagLoadHandler() {
+    console.log('[APS] Tag Loaded');
+  });
+
+  // enabling this version of apstag!
+//  apstag.debug('enable');
+
+  /* ----- End Step 1 ----- */
+
+  /* ----- Begin Step 2 ----- */
+  apstag.fetchBids({
+    slots: [{
+      slotID: 'VRV_Preroll_1', //Slot name, IE 'preroll'. Must be predefined with your account manager
+      mediaType: 'video'
+    }],
+  }, function(bids){
+    handleAmsBids(bids);
+  });
+
+  /**
+   * from https://ams.amazon.com/webpublisher/docs/help/web-integration-documentation/integration-guide/ad-server-guide/freewheel.html
+   * it looks like 'pp' is the amazon bid and 'b' is the amazon ID
+   * */
+  var fakeBidArrayElement = {
+    slotID: 'VRV_Preroll_1',
+    amznbid: 'a1b2c3', // encoded bid key
+    amzniid: 'a98qbwe98xasd8qqwewq1h', // bid UUID
+    amznsz: '300x250',
+    amznp: 'z9y8x7',
+//    qsParams: '&amznbid=v_c3d4e5&amzniid=1f35avshc7xbaskd8asdhvd',
+  };
+  var fakeBidArray = [fakeBidArrayElement];
+
+  /* ----- Begin Step 3 ----- */
+  //Your AdServer's VAST Tag
+//  var vastTagUrl = '//5fd74.v.fwmrm.net/ad/g/1?nw=392565&csid=vrv_web_homepage_1&caid=VRV-0&resp=vast2&crtp=vast2s&prof=392564%3Aotter_desktop&flag=%2Bamcb%2Bexvt;;ptgt=a&tpcl=MIDROLL&tpos=1&slid=midroll-1&maxa=1?';
+  var vastTagUrl = 'http://aax.amazon-adsystem.com/e/dtb/vast?';
+//  var vastTagUrl = 'https://aax.amazon-adsystem.com/e/mdtb/ads?';
+
+  if (AMSdebug) {
+    vastTagUrl += 'amzn_debug_mode=1';
+  }
+
+  //Handle Amazon Publisher Service Bids
+  function handleAmsBids(bids) {
+    console.log('[APS] bids received', bids);
+    var bidUrl;
+    /**
+     * 'b=#{request.keyValue("amzniid")}&rnd=#{random}&pp=#{request.keyValue("amznbid")}'
+     */
+    if(bids.length > 0) { //If we have received any bids back // TODO: deal with more than one response
+      console.log('[APS] bids array has at least one element', bids);
+      bidUrl = vastTagUrl + '&rnd=' + Date.now().toString() + bids[0].qsParams;
+      window.qsParams = bids[0].qsParams;
+      window.amzniid = bids[0].amzniid;
+      window.amznbid = bids[0].amznbid;
+      window.slotID = bids[0].slotID;
+      window.amznp = bids[0].amznp;
+      console.log('[APS] bidUrl', bidUrl);
+    } else {
+      bidUrl = vastTagUrl + '&rnd=' + Date.now().toString() + fakeBidArray[0].qsParams; //Append the APS key-value pairs to the FreeWheel VAST tag
+      window.amzniid = fakeBidArray[0].amzniid;
+      window.amznbid = fakeBidArray[0].amznbid;
+      window.amznp = fakeBidArray[0].amznp;
+      window.slotID = fakeBidArray[0].slotID;
+      window.amznp = fakeBidArray[0].amznp;
+      console.warn('[APS] bidUrl Fake! ', window.slotID, window.amznp, window.amzniid, window.amznbid);
+    }
+  }
+  /* ----- End Step 3 ----- */
+</script>
+</body>
+</html>
