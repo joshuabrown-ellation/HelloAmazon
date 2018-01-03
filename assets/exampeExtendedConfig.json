@@ -1,0 +1,91 @@
+{
+    "client": "vrv-android",
+    "app": {
+        "id": null,
+        "name": null,
+        "version": null,
+        "build": null,
+        "library_name": null,
+        "library_version": null,
+        "page_path": null,
+        "page_search": null,
+        "page_title": null,
+        "page_url": null,
+        "page_hash": null
+    },
+    "player": {
+        "start_offset": 0,
+        "language": "en-US",
+        "pause_screen": [],
+        "autoplay": true,
+        "custom_styles_class": "vrv",
+        "custom_stylesheet_links": [],
+        "hide_control_timeout": null
+    },
+    "media": {
+        "metadata": {
+            "id": "GYWEV5WGY",
+            "channel_id": "cartoonhangover",
+            "description": "This one-minute short shows an udderly new side of Chris Kirkman. Moove over Catbug, Chris is the star in this minisode with high steaks.",
+            "display_episode_number": "",
+            "duration": 96013,
+            "episode_number": 0,
+            "title": "Moo-Phobia",
+            "type": "episode"
+        },
+        "ad_breaks": [],
+        "streams": [
+            {
+                "audio_lang": "en-US",
+                "format": "hls",
+                "hardsub_lang": null,
+                "playback_source": "network",
+                "resolution": "adaptive",
+                "url": "https://dl.v.vrv.co/evs/a2524250b3b7618cd8c7b71e6882c1f0/assets/7yhjc1ggkzqzji3_,3004441.mp4,3004439.mp4,3004435.mp4,3004437.mp4,.urlset/master.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9kbC52LnZydi5jby9ldnMvYTI1MjQyNTBiM2I3NjE4Y2Q4YzdiNzFlNjg4MmMxZjAvYXNzZXRzLzd5aGpjMWdna3pxemppM18sMzAwNDQ0MS5tcDQsMzAwNDQzOS5tcDQsMzAwNDQzNS5tcDQsMzAwNDQzNy5tcDQsLnVybHNldC9tYXN0ZXIubTN1OCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNDkzNzkyMX19fV19&Signature=P92Kg6CjEJkr7Nzr2hPLbY7oaU04jxABZY7L1Ks0oKpdBjFzDNgCb08UjkfK4z3edNEDiABM4tPfEY2HNW0FDDJ3HU3fHbUDo0pjm6qzI6HWql8KEvY~18D~rVzdnXzRsutQjHKLljk1Ph7Q5hK3rOnoqz~fSbHio6w~tavjqsvvSaQjTLmpPqrAAF9qr6Gt6xZrqsnGwdhMKfiYHhnw4JV7UGbD8kIAOIKqU07~0TqvvbAZSZ-enhzptLvyI2bfiURm1kADq3aIzMn3A2z-Dvob4fquR1EbN8e8zls1Mf7WJz6r-maUYU2H77lIfBpeD4oRRkomlPlqVmdh8EU3Gg__&Key-Pair-Id=DLVR"
+            }
+        ],
+        "subtitles": [],
+        "thumbnail": {
+            "url": "https://static.vrv.co/imgsrv/display/thumbnail/320x180/catalog/cartoonhangover/b396d6d8bc8fa494024814768dcc4aa8.png"
+        }
+    },
+    "device": {
+        "id": null,
+        "type": null,
+        "advertising_id": null,
+        "ad_tracking_enabled": null,
+        "manufacturer": null,
+        "model": null,
+        "name": null,
+        "ip": null,
+        "locale": null,
+        "network_bluetooth": null,
+        "network_carrier": null,
+        "network_cellular": null,
+        "network_wifi": null,
+        "os_name": null,
+        "os_version": null,
+        "screen_density": null,
+        "screen_height": null,
+        "screen_width": null,
+        "traits": null,
+        "user_agent": null,
+        "timezone": null,
+        "location_latitude": null,
+        "location_longitude": null,
+        "location_speed": null
+    },
+    "analytics": {
+        "user_id": "",
+        "segment": {
+            "write_key": "fOOz41Z9Uv7bf0atJmyOBuSHwSsoXOQF"
+        },
+        "convivaEnabled": false,
+        "anonymous_id": "",
+        "media_reporting_parent": {
+            "id": "GYP8VJJQY",
+            "title": "Bravest Warriors",
+            "type": "series"
+        }
+    }
+}

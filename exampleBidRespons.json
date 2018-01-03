@@ -1,0 +1,29 @@
+{
+    "cur": "USD",
+    "id": "1234567",
+    "seatbid": [
+        {
+            "bid": [
+                {
+                    "ext": {
+                        "targeting": {
+                            "b": [
+                                "123"
+                            ],
+                            "amznslots": [
+                                "abc123"
+                            ],
+                            "amznp": [
+                                "lncr9c"
+                            ],
+                            "creativeURL": [
+                                "https://aax-us-pdx.amazonadsystem.com/e/mdtb/vast?b=QkBkjNJBlAJp6GCZ1PH8unIAAAFeXsTAEgAAAA-qAsvF2JE"
+                            ]
+                        }
+                    },
+                    "impid": "123"
+                }
+            ]
+        }
+    ]
+}

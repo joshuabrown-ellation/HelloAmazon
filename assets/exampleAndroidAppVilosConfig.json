@@ -1,0 +1,51 @@
+{
+    "analytics": {
+        "anonymous_id": "",
+        "media_reporting_parent": {
+            "id": "GYP8VJJQY",
+            "title": "Bravest Warriors",
+            "type": "series"
+        },
+        "segment": {
+            "write_key": "fOOz41Z9Uv7bf0atJmyOBuSHwSsoXOQF"
+        },
+        "user_id": ""
+    },
+    "client": "vrv-android",
+    "media": {
+        "ad_breaks": [],
+        "metadata": {
+            "channel_id": "cartoonhangover",
+            "description": "This one-minute short features the adorable Catbug as he tells the story of Sir Jeffers, Rebecca and the mysterious wedding. Watch the drama unfold in the cutest Bravest Warriors minisode yet.",
+            "display_episode_number": "",
+            "duration": 105689,
+            "episode_number": 0,
+            "id": "G6Q48N71R",
+            "title": "DramaBug",
+            "type": "episode"
+        },
+        "streams": [
+            {
+                "audio_lang": "en-US",
+                "format": "hls",
+                "hardsub_lang": null,
+                "playback_source": "network",
+                "resolution": "adaptive",
+                "url": "https://dl.v.vrv.co/evs/5c9563c8abcc0f3e7ce75d69e7f99e3f/assets/thfs54i2s2qe8xm_,3003735.mp4,3003733.mp4,3003729.mp4,3003731.mp4,.urlset/master.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9kbC52LnZydi5jby9ldnMvNWM5NTYzYzhhYmNjMGYzZTdjZTc1ZDY5ZTdmOTllM2YvYXNzZXRzL3RoZnM1NGkyczJxZTh4bV8sMzAwMzczNS5tcDQsMzAwMzczMy5tcDQsMzAwMzcyOS5tcDQsMzAwMzczMS5tcDQsLnVybHNldC9tYXN0ZXIubTN1OCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNDkzNjk2MH19fV19&Signature=sm3L4mzEO~k8d4OSpksivAZxC5jbcIcD4fmiIweeaokXPaoJXctp7sZHMsBH-LDLj6MWXjo6U8Vm65Oa~9ze4WoN4840MgALRHyu2HO~hnAh6QA6lCxV1xRUPSh2wnwrrC3Ai16M3ulbXV5hTyjvSC4hC0EWDXcFlX8MSTSjnkRWIv6tjgSIt2eAqMAtXxnutblmG-vKjEJiWwxHdNiD0CnDMpvZqeLEybaoBIVL4QSciOSXIB14CWdEh6cy9OsiJMYMxOkhbyNtUVN42xDm013WCive9TM53xdDf24~r1ZHBerq4jeKE4n0gp2QMZyfdrA~Dy00yhGepCVY0rb3DA__&Key-Pair-Id=DLVR"
+            }
+        ],
+        "subtitles": [],
+        "thumbnail": {
+            "url": "https://static.vrv.co/imgsrv/display/thumbnail/320x180/catalog/cartoonhangover/60b18f743d570ac3996352805cefa70c.png"
+        }
+    },
+    "player": {
+        "autoplay": true,
+        "custom_styles_class": "vrv",
+        "custom_stylesheet_links": [],
+        "hide_control_timeout": null,
+        "language": "en-US",
+        "pause_screen": [],
+        "start_offset": 0
+    }
+}
